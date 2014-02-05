@@ -1,0 +1,692 @@
+
+// General
+::selection, -moz-::selection
+  background: color-primary
+  color: white
+
+*
+  box-sizing: border-box
+
+html
+  background: url(folder-img + 'bg-main.jpg') center center fixed
+  background-size: cover
+  &.html-inner
+    background: #fff
+
+body
+  font-size: 62.5%
+  font-family: font-serif
+  height: 100%
+
+// Text
+h1, h2, h3, h4, h5, h6
+  font-family: font-title-bold
+  line-height: 1.6em
+  font-weight: normal
+
+h1
+  font-size: 5em
+  color: color-primary
+  margin: 0
+  &.negative
+    color: white
+
+p
+  font-family: font-serif
+  font-size: 1.4em
+  line-height: 1.6em
+  color: color-font
+  &.negative
+    color: white
+    > a
+      color: white
+      &:hover
+        color: darken(white, 10%)
+
+// Layout
+.box
+  padding: 1em 0
+  z-index: 10
+  padding: 1em 0 10em 0
+
+.container
+  max-width: container-base
+  *width: container-base
+  margin: 0 auto
+
+.container-inner
+  margin-top: 13em
+  max-width: container-base-inner
+  *width: container-base-inner
+  padding: 0 1em
+
+.container-internas
+  margin-top: 12em
+  margin-bottom: 4em
+
+.line
+  display: table
+  width: 102.08333333333333%
+  margin: 0 -1.0416666666666665%
+
+.float-right
+  float: right
+  margin: 1.6em 0 0 0
+
+// Top inner
+.top-inner
+  position: relative
+  height: 150px
+  background: color-primary
+  border-bottom: 3px solid color-secondary
+
+.top-inner-back
+  color: white
+  font-style: oblique
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.top-inner-title
+  color: white
+  font-size: 4em
+  font-family: font-title
+
+.top-inner-logo
+  width: 160px
+  height: 160px
+  bg-size(folder-img + 'brasao-alusivo.png', cover)
+  position: absolute
+  left: 50%
+  bottom: -80px
+  margin-left: -85px
+
+// Box share
+.box-share
+  position: absolute
+  top: 5.3em
+  left: 50%
+  margin-left: -29%
+
+.share-list
+  margin: 0
+  padding: 0
+  .share-item
+    display: inline-block
+    overflow: hidden
+    vertical-align: top
+    &.share-item-facebook
+      width: 90px
+    &.share-item-gplus
+      width: 70px
+
+// Inner pages
+.content-inner-sidebar
+  column(2)
+  padding: 0 0 5em 0
+
+.content-inner-main
+  column(9)
+
+.main-content
+  border-right: 8px solid color-meta
+  padding-right: 5em
+  > p
+    font-size: 2em
+    line-height: 1.8em
+    margin-right: 2em
+    color: #999
+
+.footer-main-inner
+  border-top: 3px dotted color-secondary
+  padding: 2em 0
+  width: 80%
+
+.footer-back-link
+  font-size: 1.6em
+  color: color-blue-hard
+  text-decoration: none
+  font-style: oblique
+  &:hover
+    color: color-meta
+
+.sidebar-photo
+  border: 1px solid color-secondary
+
+.sidebar-name
+  color: color-primary
+  font-size: 2em
+  font-family: font-title-bold
+
+.sidebar-description
+  color: color-border
+  font-size: 1.6em
+  font-family: font-serif
+  font-style: oblique
+  border-bottom: 5px dotted color-secondary
+  padding-bottom: .4em
+
+.main-inner-title
+  font-family: font-serif
+  color: color-primary
+  font-size: 4em
+  line-height: 1
+  margin-top: 0
+  &.title-year
+    font-family: font-default
+    font-weight: bold
+    margin-top: 1em
+    margin-bottom: .4em
+    &.title-year-first
+      margin-top: 0
+
+// Document
+.document-item
+  padding: .4em 0 0 0
+  margin-bottom: 1em
+  border-bottom: 1px dotted #eee
+  position: relative
+  &:last-child
+    border-bottom: none
+
+.document-meta
+  font-size: 1.8em
+  font-family: font-default
+  font-weight: 700
+  margin: 0
+  color: color-blue-hard
+
+.document-date
+  background: #eee
+  color: #666
+  font-family: arial
+  font-weight: normal
+  font-size: .8em
+  padding: .2em .5em
+  margin-right: .4em
+  border-radius: 3px
+
+.document-description
+  font-size: 1.2em
+  color: #aaa
+  margin-top: .1em
+  font-style: oblique
+  width: 80%
+
+.btn-download-document
+  position: absolute
+  right: 0
+  top: 20px
+  font-size: 1.4em
+  font-style: oblique
+  text-decoration: none
+  padding: .3em 1em
+  color: white
+  background: color-primary
+  &:hover
+    background: lighten(color-primary, 10%)
+
+// Document data index
+.document-data-list
+  list-style: none
+  margin: 0
+  padding: 0 2em
+  > li
+    display: block
+    position: relative
+    > a
+      font-family: font-default
+      font-size: 4em
+      color: #bbb
+      text-decoration: none
+      &.active
+        color: color-primary
+        &:before
+          content: '\e816'
+          font-family: font-icon
+          position: absolute
+          left: -20px
+          font-size: 0.6em
+          top: 12px
+
+// Partials
+.box-center
+  padding-top: 4em
+  text-align: center
+
+.box-item-bg
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 800px
+  z-index: 1
+  background: url(folder-img + 'bg-main.jpg') center bottom no-repeat color-secondary
+  background-size: cover
+
+.menu-fixed
+  height: 170px
+  position: absolute
+  width: 100%
+  left: 0
+  top: 1em
+  .fixed-list
+    padding: 0
+    margin: 0
+    display: block
+    text-align: center
+    .fixed-item
+      display: inline-block
+      padding: 0 1em
+      vertical-align: middle
+      margin: 0 3.1em
+      .fixed-link
+        color: #eee
+        text-decoration: none
+        font-family: font-serif
+        font-size: 1.5em
+        font-style: oblique
+        text-align: left
+        padding: .5em
+        &:hover
+          text-decoration: underline
+        &.active
+          color: color-blue-hard
+          background: white
+          border-radius: 2px
+          //box-shadow: 0 2px 0 darken(color-primary, 40%)
+          &:hover
+            text-decoration: none
+
+.fixed-brasao
+  width: 150px
+  height: 150px
+  bg-size(folder-img + 'brasao-alusivo.png', cover)
+  .fixed-link
+    display: block
+    width: 100%
+    height: 100%
+
+.menu-fixed-after
+  background-transparency(color-primary, .9)
+  size-brasao-scroll = 120px
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: size-brasao-scroll + 10
+  text-align: center
+  z-index: 9999
+  padding-top: 5px
+  .fixed-brasao
+    width: size-brasao-scroll
+    height: size-brasao-scroll
+    @extend .transition
+
+// Section
+.section-title, .section-description, .top-inner-content
+  column(12)
+
+.section-participar
+  column(8)
+
+.section-importante
+  column(4)
+  padding-left: 2em
+  > p
+    color: #999
+    font-style: oblique
+
+.section-title
+  margin-top: 0
+
+.section-item-title
+  color: color-blue-hard
+  font-size: 2em
+  font-weight: normal
+
+.section-description, .section-participar
+  margin-bottom: 1em
+  > p
+    font-size: 1.6em
+    font-style: oblique
+
+// Main
+.box-item-main
+  padding-bottom: 16em
+  
+.main-inner
+  margin-top: 13em
+
+.logo-cut
+  margin: 0 auto
+  width: 28.4em
+  height: 27.7em
+  overflow: hidden
+
+.logo-item
+  background-transparency(color-primary, .8)
+  width: 25em + 3
+  height: 25em + 3
+  border-radius: 50%
+  background-image: url(folder-img + 'logo-50-anos.png') !important
+  background-position: center center !important
+  background-repeat: no-repeat !important
+  background-clip: padding-box
+  border: 1.6em solid rgba(#fff, .7)
+
+.line-main
+  background-transparency(white, .7)
+  overflow: hidden
+
+.btn-group
+  text-align: center
+
+.line-main-secondary
+  background-transparency(color-primary, .6)
+  padding: 1em 0
+
+// Timeline
+.box-item-timeline
+  background: color-primary
+  border-top: 4px solid color-blue-hard
+  position: relative
+  padding-top: 8em
+
+.btn-group-timeline
+  column(12)
+  overflow: visible
+  margin-top: 3em
+
+.overlay-year
+  background-transparency(color-blue-hard, .6)
+  display: none
+  width: 100%
+  height: 100%
+  text-align: center
+  padding-top: 3.5em
+  > span
+    font-family: font-default
+    font-size: 3.8em
+    display: block
+    color: white
+    font-weight: bold
+
+.btn-year
+  size-btn-year = 14.2em
+  display: inline-block
+  margin-right: 3em
+  width: size-btn-year
+  height: size-btn-year
+  border-radius: 50%
+  border: 8px solid rgba(white, .4)
+  background-clip: padding-box
+  background-size: cover
+  overflow: hidden
+  text-decoration: none
+  visibility: hidden
+  &:hover
+    @extend .transition
+    border-width: 12px
+    .overlay-year
+      display: block
+  &.year-item-60
+    background-image: url(folder-img + 'timeline/60s.jpg')
+  &.year-item-70
+    background-image: url(folder-img + 'timeline/70s.jpg')
+  &.year-item-80
+    background-image: url(folder-img + 'timeline/80s.jpg')
+  &.year-item-90
+    background-image: url(folder-img + 'timeline/90s.jpg')
+  &.year-item-00
+    background-image: url(folder-img + 'timeline/00s.jpg')
+    margin-right: 0
+
+// Eventos
+.box-item-eventos
+  padding-bottom: 20em
+  background-transparency(#f7e5d1, .8)
+  border-top: 4px solid color-blue-hard
+
+.event-box
+  column(6)
+
+.event-item
+  position: relative
+  padding: 5em 2em 1em 2.2em
+  background: white
+  width: 100%
+  visibility: hidden
+  min-height(250px)
+
+.event-date
+  position: absolute
+  top: 0
+  left: .5em
+  display: block
+  font-size: 4em
+  color: color-meta
+  font-family: font-default
+  font-weight: 700
+  font-style: oblique
+  border-top: 9px solid color-meta
+  letter-spacing: -.05em
+
+.event-title
+  font-family: font-serif
+  font-size: 1.8em
+  font-weight: bold
+  color: color-primary
+  line-height: 1.2em
+  //height: 55px
+  margin-bottom: 0
+
+.event-description
+  margin: .5em 0 1em 0
+  font-size: 1.4em
+  color: color-border
+
+.event-meta
+  width: 100%
+  display: table
+
+.event-meta-more
+  float: right
+  margin: 0
+
+.event-data
+  margin-bottom: 1em
+
+.event-data-list
+  margin: 0
+  padding: 0
+  list-style: none
+  .event-data-item
+    display: inline-block
+    margin: 0 2em .5em 0
+    vertical-align: top
+    .event-data-item-title
+      display: block
+      font-size: 1.6em
+    .event-data-item-value
+      display: block
+      font-size: 1.4em
+      font-style: oblique
+      color: color-border
+    &.local
+      width: 50%
+
+// Identidade Visual
+.box-item-identidade-visual
+  padding-bottom: 6em
+  background-transparency(#ebebeb, .9)
+  border-top: 4px solid color-blue-hard
+
+size-identidade-preview  = 8em
+folder-identidade-visual = '/identidade-visual/'
+
+.identidade-box
+  column(4)
+  margin-bottom: 3em
+
+.identidade-item
+  width: 100%
+  position: relative
+  padding-left: size-identidade-preview + 2
+
+.identidade-preview
+  position: absolute
+  left: 0
+  top: 0
+  display: block
+  border-radius: 50%
+  border: 5px solid #eee
+  width: size-identidade-preview
+  height: size-identidade-preview
+  background-position: center center
+  background-size: cover
+
+.identidade-title
+  font-family: font-serif
+  font-size: 1.8em
+  font-weight: bold
+  color: color-blue-hard
+  margin: 0
+  font-style: oblique
+
+.identidade-description
+  margin: 0 0 1em 0
+  font-style: oblique
+  color: #999
+
+.iv-brasao
+  background-image: url(folder-img + folder-identidade-visual + 'brasao.jpg')
+
+.iv-brasao-pb
+  background-image: url(folder-img + folder-identidade-visual + 'brasao-pb.jpg')
+
+.iv-brasao-letter
+  background-image: url(folder-img + folder-identidade-visual + 'brasao-letter.jpg')
+
+.iv-brasao-letter-pb
+  background-image: url(folder-img + folder-identidade-visual + 'brasao-letter-pb.jpg')
+
+.iv-banner
+  background-image: url(folder-img + folder-identidade-visual + 'banner.jpg')
+
+.iv-faixa
+  background-image: url(folder-img + folder-identidade-visual + 'faixa.jpg')
+
+.iv-wallpaper-color
+  background-image: url(folder-img + folder-identidade-visual + 'wallpaper-color.jpg')
+
+.iv-wallpaper-pb
+  background-image: url(folder-img + folder-identidade-visual + 'wallpaper-pb.jpg')
+
+// Depoimentos
+.box-item-depoimentos
+  padding-bottom: 10em
+  background: white
+  border-top: 4px solid color-blue-hard
+
+#disqus_thread
+  column(12)
+  background: #f5f5f5
+  border-radius: 3px
+  padding: 4em
+  margin-top: 4em
+
+.btn-depoimento-top
+  font-size: 1.6em
+  position: absolute
+  left: 50%
+  top: 3em
+  margin-left: 19%
+  padding: .4em .7em
+  color: color-primary
+  text-decoration: none
+  border-radius: 3px
+  background: white
+  box-shadow: 0 3px 0 darken(color-secondary, 7%)
+  &:hover
+    background: darken(white, 2%)
+
+// Buttons
+.btn
+  display: inline-block
+  font-family: font-serif
+  font-size: 2.4em
+  color: color-blue-hard
+  background: white
+  text-decoration: none
+  font-style: oblique
+  padding: .3em .5em .3em 1em
+  &:hover
+    background: darken(white, 7%)
+  .btn-icon
+    font-size: .8em
+    font-weight: 100
+  &.btn-primary
+    background: color-secondary
+    &:hover
+      background: darken(color-secondary, 7%)
+  &.btn-small
+    font-size: 1.6em
+    padding-bottom: .5em
+  &.btn-block
+    width: 100%
+    text-align: center
+  &.btn-event
+    margin-top: 1.2em
+    margin-bottom: .5em
+    padding: .3em 1.6em .5em 1.6em
+  &.btn-identidade
+    font-size: 1.2em
+    padding-right: 1em
+    margin-right: .4em
+    &:hover
+      background: color-blue-hard
+      color: white
+  &.btn-navegue
+    border-radius: 3px
+
+// Buttons home - secondary
+.btn-home-secondary
+  font-size: 1.8em
+  text-decoration: none
+  color: white
+  &:hover
+    @extend .transition
+    color: darken(white, 7%)
+
+// Buttons home
+.btn-home
+  font-family: font-serif
+  font-size: 2.4em
+  display: inline-block
+  padding: 1.4em 1em
+  margin: 0
+  text-decoration: none
+  color: color-primary
+  position: relative
+  text-align: left
+  &:hover
+    @extend .transition
+    background-transparency(#fff, .5)
+  &.btn-last
+    margin-right: 0
+
+  .icone-btn
+    padding-right: .3em
+    margin-right: .5em
+    border-right: 1px solid color-primary
+    position: absolute
+    top: 43px
+    left: 10px
+
+  .btn-description
+    color: color-orange
+    display: block
+    font-size: .6em
+    font-family: font-title

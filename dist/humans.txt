@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Diogo Moretti -- Front-end developer -- @diogomoretti_
+
+# THANKS
+
+    Rafael Pessi
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JS
+    Normalize.css, jQuery, Modernizr

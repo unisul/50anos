@@ -1,0 +1,63 @@
+// Devices/Breakpoints
+phone          = "only screen and (max-width: 580px)"
+tablet         = "only screen and (min-width: 381px) and (max-width: 920px)"
+smallDesktop   = "only screen and (max-width: 800px)"
+retina         = "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+
+// @media-queries
+@media smallDesktop
+  .menu-fixed
+    display: none
+
+  .section-title, .section-description
+    column(12)
+    padding-top: 1em
+
+  .container-inner
+    margin-top: 10em
+
+@media phone
+  .box-share
+    position: static
+    text-align: center
+    width: 200px
+    margin: 0 auto
+
+  .btn-depoimento-top
+    display: none
+
+  .container-inner
+    margin-top: 0
+
+  .event-box
+    column(12)
+    margin-bottom: 2em
+
+  .event-meta-description, .event-meta-more, .section-participar, .section-importante, .identidade-box
+    column(12)
+
+  .section-importante
+    padding-left: 0
+
+  .identidade-box
+    margin-bottom: 3em
+
+  .box-item-timeline
+    padding-top: 1em
+
+  .btn-event
+    margin-top: 0 !important
+    margin-bottom: 1em
+
+  .btn-home
+    text-align: center
+
+  .main-inner
+    margin-top: 7em
+
+  .logo-cut
+    width: 28.4em -5
+    height: 27.7em -5
+  
+  .logo-item
+    background-size: 80%
