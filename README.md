@@ -31,7 +31,9 @@ Desenvolveu, mexeu... agora temos que mandar para o servidor.
 > Atenção: Para as tarefas de deploy, veja as [configurações do FTP](#configuracoes-do-ftp).
 
 **Para Build:** `grunt build`
+
 **Para Deploy de tudo:** `grunt deploy:all`
+
 **Para Deploy de HTML/CSS/JS:** `grunt deploy`
 
 ## Configurações do FTP
