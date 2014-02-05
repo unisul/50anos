@@ -10,7 +10,6 @@ Você já deve ter instalado no seu computador:
 
 - [NodeJS](http://nodejs.org/)
 - [Git](http://git-scm.com/)
-- [GruntJS](http://gruntjs.com)
 
 ### Baixando e instalando o projeto e as dependências
 
