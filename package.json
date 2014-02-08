@@ -2,7 +2,7 @@
   "name": "unisul-50-anos",
   "version": "1.0.0",
   "title": "Unisul 50 Anos",
-  "homepage": "http://www.unisul.br/50anos",
+  "homepage": "http://50anos.unisul.br",
   "description": "Hotsite comemorativo aos 50 anos da Unisul",
   "author": {
     "name": "Diogo Moretti",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
+    "url": "git://github.com/unisul/50anos.git"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
