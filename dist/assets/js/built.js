@@ -5,7 +5,7 @@
  * Version: 1.0.0
  * Author:  Diogo Moretti (diogo@diogo.nu)
  *
- * Copyright (c) 2013 Diogo Moretti
+ * Copyright (c) 2014 Diogo Moretti
  * -------------------------------------------------------
  */
 
