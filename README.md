@@ -28,7 +28,7 @@ A partir deste momento, qualquer alteração no [stylus](http://learnboost.githu
 
 Desenvolveu, mexeu... agora temos que mandar para o servidor.
 
-> Atenção: Para as tarefas de deploy, veja as [configurações do FTP](#configuracoes-do-ftp).
+> Atenção: Para as tarefas de deploy, veja as [configurações do FTP](#configura%C3%A7%C3%B5es-do-ftp).
 
 **Para Build:** `grunt build`
 
