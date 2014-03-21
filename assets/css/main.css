@@ -964,32 +964,32 @@ p.negative > a:hover {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 47.91666666666667%;
+  width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
-  *width: 47.91666666666667% -correction;
+  *width: 22.916666666666664% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
 .event-item {
   position: relative;
-  padding: 5em 2em 1em 2.2em;
+  padding: 3em 2em 1em 2.2em;
   background: #fff;
   width: 100%;
   visibility: hidden;
-  min-height: 250px;
+  min-height: 150px;
   height: auto !important;
-  height: 250px;
+  height: 150px;
 }
 .event-date {
   position: absolute;
   top: 0;
-  left: 0.5em;
+  left: 0.8em;
   display: block;
-  font-size: 4em;
+  font-size: 3em;
   color: #e5a866;
   font-family: "Times", Times, serif;
   font-weight: 700;
   font-style: oblique;
-  border-top: 9px solid #e5a866;
+  border-top: 5px solid #e5a866;
   letter-spacing: -0.05em;
 }
 .event-title {
@@ -1194,6 +1194,9 @@ p.negative > a:hover {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
   padding: 0.3em 1.6em 0.5em 1.6em;
+}
+.btn.btn-all-events {
+  margin-top: 0.6em;
 }
 .btn.btn-identidade {
   font-size: 1.2em;
