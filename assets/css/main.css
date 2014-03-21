@@ -974,10 +974,9 @@ p.negative > a:hover {
   padding: 3em 2em 1em 2.2em;
   background: #fff;
   width: 100%;
-  visibility: hidden;
-  min-height: 150px;
+  min-height: 145px;
   height: auto !important;
-  height: 150px;
+  height: 145px;
 }
 .event-date {
   position: absolute;
@@ -991,6 +990,7 @@ p.negative > a:hover {
   font-style: oblique;
   border-top: 5px solid #e5a866;
   letter-spacing: -0.05em;
+  line-height: 1.2em;
 }
 .event-title {
   font-family: "Georgia", serif;
@@ -999,6 +999,14 @@ p.negative > a:hover {
   color: #417686;
   line-height: 1.2em;
   margin-bottom: 0;
+}
+.event-title > a {
+  text-decoration: none;
+  color: #417686;
+}
+.event-title > a:hover {
+  color: #345e6b;
+  text-decoration: underline;
 }
 .event-description {
   margin: 0.5em 0 1em 0;

@@ -457,8 +457,7 @@ p
   padding: 3em 2em 1em 2.2em
   background: white
   width: 100%
-  visibility: hidden
-  min-height(150px)
+  min-height(145px)
 
 .event-date
   position: absolute
@@ -472,6 +471,7 @@ p
   font-style: oblique
   border-top: 5px solid color-meta
   letter-spacing: -.05em
+  line-height: 1.2em
 
 .event-title
   font-family: font-serif
@@ -479,8 +479,13 @@ p
   font-weight: bold
   color: color-primary
   line-height: 1.2em
-  //height: 55px
   margin-bottom: 0
+  > a
+    text-decoration: none
+    color: color-primary
+    &:hover
+      color: darken(color-primary, 20%)
+      text-decoration: underline
 
 .event-description
   margin: .5em 0 1em 0
