@@ -12,6 +12,7 @@ $.ajax({
             var day          = events[i].strong;
             var month        = events[i].em;
             var year         = events[i].span;
+            var image        = events[i].img.src;
             var date         = day + '/' + month;
             var title        = events[i].h3;
             var completeDate = new Date(month + ' ' + day + ', ' + year);
@@ -19,7 +20,7 @@ $.ajax({
 
             if (completeDate.getTime() > (new Date().getTime())) {
                 count++;
-                getEventsHTML += '<div class="event-box"><div class="event-item"><span class="event-date">' + date + '</span><h2 class="event-title"><a href="http://www.unisul.br/wps/portal/home/fique-por-dentro/eventos/todos/' + url + '" target="_blank">' + title + '</a></h2></div></div>';
+                getEventsHTML += '<div class="event-box"><div class="event-feature"><img class="image-feature" src="http://www.unisul.br/' + image + '" /></div><div class="event-item"><span class="event-date">' + date + '</span><h2 class="event-title"><a href="http://www.unisul.br/wps/portal/home/fique-por-dentro/eventos/todos/' + url + '" target="_blank">' + title + '</a></h2></div></div>';
                 return count < 4;
             }
 

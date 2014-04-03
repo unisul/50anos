@@ -450,14 +450,27 @@ p
   border-top: 4px solid color-blue-hard
 
 .event-box
+  transition: all .2s ease
   column(3)
+  &:hover
+    .image-feature
+      opacity: 1
+
+.event-feature
+  height: 14.1em
+  width: 100%
+  background: #fff
+
+.image-feature
+  max-width: 100%
+  opacity: .7
 
 .event-item
   position: relative
   padding: 3em 2em 1em 2.2em
   background: white
   width: 100%
-  min-height(145px)
+  min-height(170px)
 
 .event-date
   position: absolute
@@ -657,6 +670,12 @@ folder-identidade-visual = '/identidade-visual/'
       color: white
   &.btn-navegue
     border-radius: 3px
+  &.btn-eventos
+    background: color-primary
+    color: white
+    &:hover
+      background: lighten(color-primary, 7%)
+
 
 // Buttons home - secondary
 .btn-home-secondary
